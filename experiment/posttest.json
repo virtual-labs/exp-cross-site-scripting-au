@@ -10,7 +10,7 @@
         "d": "Redirecting users to external websites"
       },
       "explanations": {
-        "a": "Stored XSS allows attackers to inject malicious scripts into the website's database, which are then executed when other users view the affected pages, compromising their browsers. <a href='https://www.example.com'>Learn more</a>",
+        "a": "Stored XSS allows attackers to inject malicious scripts into the website's database, which are then executed when other users view the affected pages, compromising their browsers. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
         "b": "Incorrect. Stored XSS primarily affects user security rather than website performance.",
         "c": "Incorrect. Stored XSS focuses on injecting scripts, not changing visual layout.",
         "d": "Incorrect. While possible, the primary risk of stored XSS is script execution, not redirection."
@@ -27,7 +27,7 @@
         "d": "Disabling JavaScript on the server"
       },
       "explanations": {
-        "a": "Correct! Proper input validation and output encoding techniques help prevent malicious scripts from being stored and executed. <a href='https://www.example.com'>Learn more</a>",
+        "a": "Correct! Proper input validation and output encoding techniques help prevent malicious scripts from being stored and executed. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
         "b": "Incorrect. Bandwidth affects data transfer, not vulnerability mitigation.",
         "c": "Incorrect. Storage size is unrelated to XSS vulnerability mitigation.",
         "d": "Incorrect. Disabling JavaScript server-side does not mitigate stored XSS on client browsers."
@@ -44,13 +44,64 @@
         "d": "Increase server response time"
       },
       "explanations": {
-        "a": "Correct! A successful stored XSS attack lets an attacker execute scripts on other users' browsers, potentially stealing session cookies or performing actions on their behalf. <a href='https://www.example.com'>Learn more</a>",
+        "a": "Correct! A successful stored XSS attack lets an attacker execute scripts on other users' browsers, potentially stealing session cookies or performing actions on their behalf. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
         "b": "Incorrect. Stored XSS primarily involves script execution rather than file downloads.",
         "c": "Incorrect. XSS attacks target client-side, not server-side logic.",
         "d": "Incorrect. Server response time isn't directly impacted by stored XSS attacks."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is the best way to prevent stored XSS vulnerabilities?",
+      "answers": {
+        "a": "Sanitizing and escaping user input before rendering",
+        "b": "Disabling cookies in the browser",
+        "c": "Allowing users to input JavaScript securely",
+        "d": "Restricting file uploads"
+      },
+      "explanations": {
+        "a": "Correct! Sanitizing and escaping user input ensures that injected scripts are treated as text rather than executable code. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. Disabling cookies does not prevent XSS attacks.",
+        "c": "Incorrect. Allowing JavaScript input increases risk rather than mitigating it.",
+        "d": "Incorrect. Restricting file uploads does not address stored XSS vulnerabilities."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which security mechanism helps mitigate the impact of stored XSS attacks?",
+      "answers": {
+        "a": "Content Security Policy (CSP)",
+        "b": "Using a faster database",
+        "c": "Increasing server CPU power",
+        "d": "Encrypting HTML content"
+      },
+      "explanations": {
+        "a": "Correct! CSP helps restrict the execution of scripts and reduces the impact of stored XSS attacks. <a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP'>Learn more</a>",
+        "b": "Incorrect. Database speed has no effect on XSS mitigation.",
+        "c": "Incorrect. Increasing CPU power does not prevent stored XSS attacks.",
+        "d": "Incorrect. HTML encryption is not a common defense against XSS attacks."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the key difference between stored XSS and reflected XSS?",
+      "answers": {
+        "a": "Stored XSS is persistent, while reflected XSS requires user interaction each time",
+        "b": "Reflected XSS is more dangerous than stored XSS",
+        "c": "Stored XSS cannot steal session cookies",
+        "d": "Reflected XSS is stored in a database"
+      },
+      "explanations": {
+        "a": "Correct! Stored XSS remains in the application and affects multiple users, while reflected XSS requires a user to click a malicious link each time. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. Stored XSS is usually more dangerous because it persists and affects multiple users.",
+        "c": "Incorrect. Stored XSS can steal session cookies through script execution.",
+        "d": "Incorrect. Reflected XSS is not stored; it occurs dynamically when a user clicks a malicious link."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
