@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is Cross-Site Scripting (XSS)?",
+      "answers": {
+        "a": "A vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users",
+        "b": "A method for securely transferring data between servers",
+        "c": "A protocol used for encrypting user credentials",
+        "d": "A tool for testing server response times"
+      },
+      "explanations": {
+        "a": "Correct! XSS is a vulnerability where attackers inject scripts into web pages, affecting other users' browsers. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. XSS is a security vulnerability, not a data transfer method.",
+        "c": "Incorrect. XSS isn't related to encrypting user credentials.",
+        "d": "Incorrect. XSS is not used for testing server response times."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How can XSS vulnerabilities be exploited?",
+      "answers": {
+        "a": "By injecting malicious scripts into input fields that are stored and displayed to other users",
+        "b": "By increasing server bandwidth",
+        "c": "By deleting database records",
+        "d": "By disabling browser cookies"
+      },
+      "explanations": {
+        "a": "Correct! XSS vulnerabilities allow attackers to inject scripts into input fields, which are then stored and executed when viewed by other users. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. Bandwidth affects data transfer, not XSS exploitation.",
+        "c": "Incorrect. Deleting records isn't typically associated with XSS attacks.",
+        "d": "Incorrect. Browser cookies are unrelated to XSS exploitation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is input validation important in preventing XSS?",
+      "answers": {
+        "a": "It ensures that user input meets specified criteria and does not contain malicious scripts",
+        "b": "It optimizes server response times",
+        "c": "It encrypts data during transmission",
+        "d": "It deletes outdated database records"
+      },
+      "explanations": {
+        "a": "Correct! Proper input validation helps prevent users from injecting malicious scripts that can exploit XSS vulnerabilities. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. Input validation is about security, not server response times.",
+        "c": "Incorrect. Data encryption during transmission is a separate security measure.",
+        "d": "Incorrect. Deleting records isn't related to input validation for XSS prevention."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What are the main types of XSS attacks?",
+      "answers": {
+        "a": "Stored XSS, Reflected XSS, and DOM-based XSS",
+        "b": "SQL Injection, Reflected XSS, and Stored XSS",
+        "c": "Command Injection, Stored XSS, and Reflected XSS",
+        "d": "DOM-based XSS, Buffer Overflow, and Cross-Site Request Forgery (CSRF)"
+      },
+      "explanations": {
+        "a": "Correct! The three main types of XSS attacks are Stored, Reflected, and DOM-based XSS. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. SQL Injection is a different type of attack.",
+        "c": "Incorrect. Command Injection is not a type of XSS attack.",
+        "d": "Incorrect. Buffer Overflow and CSRF are unrelated to XSS."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following best describes stored XSS?",
+      "answers": {
+        "a": "Malicious scripts are permanently stored on the target server and served to users",
+        "b": "Scripts are executed only in the attacker's browser",
+        "c": "A one-time attack that does not persist on the server",
+        "d": "A vulnerability that only affects mobile applications"
+      },
+      "explanations": {
+        "a": "Correct! Stored XSS occurs when malicious scripts are permanently stored on a server and executed when users access the infected page. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. XSS attacks affect victims' browsers, not just the attacker's browser.",
+        "c": "Incorrect. Stored XSS remains on the server, unlike reflected XSS, which is a one-time attack.",
+        "d": "Incorrect. Stored XSS affects web applications, not just mobile apps."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which security practice helps prevent XSS attacks?",
+      "answers": {
+        "a": "Encoding output and sanitizing input",
+        "b": "Using a faster database",
+        "c": "Increasing server memory",
+        "d": "Restricting user access to the database"
+      },
+      "explanations": {
+        "a": "Correct! Encoding output and sanitizing user input prevent malicious scripts from being executed. <a href='https://owasp.org/www-community/attacks/xss/'>Learn more</a>",
+        "b": "Incorrect. Database performance has no effect on XSS attacks.",
+        "c": "Incorrect. Increasing server memory does not mitigate XSS vulnerabilities.",
+        "d": "Incorrect. Restricting database access does not directly address XSS risks."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
