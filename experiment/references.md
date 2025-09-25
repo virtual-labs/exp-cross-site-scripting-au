@@ -1,4 +1,4 @@
-### References  
+
 
 1. [What Is Cross-Site Scripting (XSS)? – GeeksforGeeks Explanation](https://www.geeksforgeeks.org/ethical-hacking/what-is-cross-site-scripting-xss/)
 2. [Exploring Cross-Site Scripting (XSS) Attack Payloads, Prevention, and Mitigation Techniques (ResearchGate)](https://www.researchgate.net/publication/360400563_Exploring_Cross-Site_Scripting_XSS_Attack_Payloads_Prevention_and_Mitigation_Techniques)
