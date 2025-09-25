@@ -1,4 +1,4 @@
-### Procedure
+
 <b>Simulation Introduction</b>
   <p> <li> You have two simulated browsers. One represents you (the user), and the other belongs to Alice.</li>
    <li> Both browsers will load a blog page, which allows you to post comments.</li>
